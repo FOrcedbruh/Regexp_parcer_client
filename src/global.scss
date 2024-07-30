@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+}
+
+#root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    gap: 60px;
+
+    h1 {
+        color: #fff;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: fit-content;
+    }
+
+    .selectedFiles {
+        width: 260px;
+        height: fit-content;
+        padding: 20px;
+        background-color: #2e2e2e;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+
+        h5 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .confirmBtn {
+            border: 1px solid #fff;
+            background-color: #2e2e2e;
+            outline: none;
+            color: #fff;
+            padding: 5px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
+.hidden {
+    opacity: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+.Btn {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(114,10,128,1) 33%, rgba(145,13,154,1) 52%, rgba(255,72,0,1) 100%);
+    border-radius: 10px;
+    padding: 10px 30px;
+    width: 260px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+}
+
